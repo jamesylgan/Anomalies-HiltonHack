@@ -1,17 +1,24 @@
 <html>
       <head>
         <script type="text/javascript" language="JavaScript">
-                  function clickedButton()
-            {
-                var uid = document.forms["search"]["UID"].value;
-                window.location = "http://bellevue.tech/anomalies/index_"+uid+".html"
-
-            }
+                    function clickedButton() {
+                      var uid = document.forms["search"]["UID"].value;
+                      window.location = "http://bellevue.tech/anomalies/index_"+uid+".html"
+                    }
              </script>
       </head>
 
-      <form name="search" method="post">
+      <h1> Type the User ID of the Guest Below to Access Machine Learning Generated Personalized Experience Website</h1>
+
+      <form name="search" method="post" onsubmit="javascript:clickedButton();return false">
             <input type="text" name="UID" id="UID" />
             <input type="button" value="Search" onClick="clickedButton()"/>
       </form>
+
+
+      <p>   (Reminder: Current users in sample database:</p>
+            Name - UID</br>
+            Bob Smith - 22345323</br>
+            Jane Doe - 30842938</br>
+            John Doe - 32516238)</br>
  </html>
