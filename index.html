@@ -1,0 +1,17 @@
+<html>
+      <head>
+        <script type="text/javascript" language="JavaScript">
+                  function clickedButton()
+            {
+                var uid = document.forms["search"]["UID"].value;
+                window.location = "http://bellevue.tech/anomalies/index_"+uid+".html"
+
+            }
+             </script>
+      </head>
+
+      <form name="search" method="post">
+            <input type="text" name="UID" id="UID" />
+            <input type="button" value="Search" onClick="clickedButton()"/>
+      </form>
+ </html>
