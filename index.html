@@ -32,21 +32,48 @@
                             var uid = document.forms["search"]["UID"].value;
                             window.location = "http://bellevue.tech/anomalies/index_"+uid+".html"
                           }
+                          function clickedButtonTwo() {
+                            var uid = document.forms["search"]["UID"].value;
+                            window.location = "http://bellevue.tech/anomalies/"+uid+"/index.html"
+                          }
                    </script>
             </head>
 
       <h3> Type the User ID of the Guest Below to Access Machine Learning Generated Personalized Experience Website</h3>
 
-      <form name="search" method="post" onsubmit="javascript:clickedButton();return false">
+<!--      <center><form name="search" method="post" onsubmit="javascript:clickedButton();return false">
             <input type="text" name="UID" id="UID" />
 
               </div>
             </div>
-            
-              
-                      <center><input type="button" value="Search" onClick="clickedButton()"/></center>
-                      </p></div>
-      </form>
+
+              <nav>
+                <ul>
+                    <li><input type="button" value="Search Customer" onClick="clickedButton()"/></li>
+                    <li><input type="button" value="Search Internal" onClick="clickedButtonTwo()"/></li>
+                  </div>
+                </ul>
+              </nav>
+            </p>
+          </form>
+        </center>
+      </header>-->
+            <form name="search" method="post" onsubmit="javascript:clickedButton();return false">
+            <input type="text" name="UID" id="UID" />
+        </div>
+          </div>
+          <center><div id="content">
+            <nav>
+              <ul>
+                <li><input type="button" value="Search Customers" onClick="clickedButton()"/></li>
+                <li><input type="button" value="Search Internally" onClick="clickedButtonTwo()"/></li>
+                <!--<li><a href="#elements">Elements</a></li>-->
+              </ul>
+            </nav>
+            </div></center>
+          </header>
+
+
                 <!--<li><a href="#work">Work</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
